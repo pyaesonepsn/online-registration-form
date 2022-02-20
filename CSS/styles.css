@@ -1,0 +1,177 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 300 100%/1.5 'Merriweather', sans-serif;
+  color: #2c333d;
+}
+header {
+  text-align: center;
+}
+legend {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+form {
+  padding: 20px 16px 30px;
+  margin-bottom: 50px;
+  margin-top: 3px;
+}
+button {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  padding: 20px 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #30acac;
+}
+
+.main-header {
+  background-color: #2c333d;
+  color: #fff;
+  padding: 20px 40px;
+}
+.second-header {
+  margin: 50px 0 5px;
+  padding: 5px;
+}
+.header p {
+  color: grey;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.header {
+   text-align: center;
+}
+.thick-line {
+  width: 96%;
+  border: 1.5px solid;
+  margin: auto;
+}
+.thin-line {
+  width: 96%;
+  border: 1px solid;
+  margin: auto;
+  margin-top: 3px;
+}
+
+.newsletter label {
+  margin-top: 20px;
+}
+input[type="text"],
+input[type="name"],
+input[type="email"],
+input[type="tel"],
+select[id="state"],
+textarea[id="topics"] {
+    background-color: rgba(190, 195, 198, 0.281);
+    border: none;
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+    border-radius: .2rem;
+    margin: 10px 0;
+}
+input[id="zip"] {
+  width: 50%;
+}
+textarea[id="topics"] {
+  padding-bottom: 40px;
+}
+input[type="checkbox"],
+input[type="radio"],
+textarea[id="topics"] {
+    margin: 8px 10px 10px 0;
+}
+fieldset {
+  border: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: lightblue;
+  transition: 300ms;
+}
+.contact {
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  border-bottom: solid;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+::placeholder {
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+  color: rgba(177, 177, 177);
+}
+.footer p {
+  font-style: italic;
+  color: grey;
+}
+/* Flex Box  */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Query */
+@media (min-width:768px) {
+
+  main {
+    max-width: 600px;
+    margin: auto;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .container label {
+    width: 30%;
+    margin: auto 0;
+  }
+  .container input,
+  .container select {
+    width: 70%;
+  }
+  input[id="zip"] {
+    width: 30%;
+  }
+  form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .thick-line {
+  width: 600px;
+  border: 1.5px solid;
+  margin: auto;
+}
+.thin-line {
+  width: 600px;
+  border: 1px solid;
+  margin: auto;
+  margin-top: 3px;
+}
+
+}
